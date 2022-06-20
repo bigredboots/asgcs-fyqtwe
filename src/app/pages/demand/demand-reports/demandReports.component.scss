@@ -9,6 +9,9 @@
   right: 0px;
   position: absolute;
 }
+.menu-check:checked ~ label {
+  font-weight: ;
+}
 .menu-check:checked ~ ul {
   max-height: 1000px;
 }
