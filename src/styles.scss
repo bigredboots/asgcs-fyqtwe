@@ -1352,3 +1352,20 @@ h4 {
     }
   }
 }
+.tabular-screen {
+  opacity: 0;
+  transition: $default-transition;
+  margin-top: 50p
+}
+.main-screen {
+  opacity: 0;
+  transition: $default-transition;
+}
+.tabular-view {
+  .tabular-screen {
+    opacity: 1;
+  }
+  .main-screen {
+    opacity: 0;
+  }
+} 

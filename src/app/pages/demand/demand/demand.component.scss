@@ -1,5 +1,14 @@
 @import '../../../scss/global';
-
+.page-container {
+  position: relative;
+}
+.tabular-screem {
+  position: absolute;
+  top: 0px;
+}
+.large-sum-tiles {
+  display: flex;
+}
 .buttonjump {
   position: absolute;
   right: 27px;
@@ -114,7 +123,7 @@
 .left-side-map {
   display: flex;
   opacity: 1;
-  transition: .3s ease-in all;
+  transition: 0.3s ease-in all;
 }
 
 .content.flipped {
@@ -134,7 +143,6 @@
       outline: 0;
     }
   }
-  
 }
 .content.flipped .back {
   transform: rotateY(0deg);

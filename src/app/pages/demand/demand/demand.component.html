@@ -1,5 +1,5 @@
 <div class="page-container">
-  <app-grid-container>
+  <app-grid-container class="main-screen">
     <div gridCell class="card card-body" (mouseleave)="focusOutDonutOne()">
       <div class="card-title">
         <div class="card-title-text">Demand Donut One</div>
@@ -220,17 +220,62 @@
   </app-grid-container>
 
   <!--new grid -->
-  <app-grid-container>
-    <div gridCell gcColSpan="3">
+  <app-grid-container class="tabular-screen">
+    <div gcColSpan="3" gridCell class="large-summary">
       <div class="card card-body">
         <div class="card-title">
           <div class="left-side-content">
-            <div class="card-title-text">Summary</div>
+            <div class="card-title-text">Demand Summary Tiles</div>
           </div>
         </div>
-        <img
-          src="https://stackblitz.com/files/asgcs/github/bigredboots-arrow/angular-component-library-example-part-3-progress-45zjbr/master/src/assets/images/map-two-spots-line.jpg"
-        />
+        <div class="large-sum-tiles">
+        <div class="card-element four-totals">
+          <div class="lines">
+            <div class="title">Order Count</div>
+            <div class="numbers">9,999</div>
+          </div>
+          <div class="lines">
+            <div class="title">Order Sales</div>
+            <div class="numbers">$ 99.9M</div>
+          </div>
+          <div class="lines">
+            <div class="title">Customers</div>
+            <div class="numbers">99</div>
+          </div>
+          <div class="lines">
+            <div class="title">Parts</div>
+            <div class="numbers">999</div>
+          </div>
+        </div>
+        <div class="card-element four-totals">
+          <div class="lines">
+            <div class="title">Order Count</div>
+            <div class="numbers">9,999</div>
+          </div>
+          <div class="lines">
+            <div class="title">Order Sales</div>
+            <div class="numbers">$ 99.9M</div>
+          </div>
+          <div class="lines">
+            <div class="title">Customers</div>
+            <div class="numbers">99</div>
+          </div>
+          <div class="lines">
+            <div class="title">Parts</div>
+            <div class="numbers">999</div>
+          </div>
+        </div>
+        <div class="card-element four-totals">
+          <div class="lines">
+            <div class="title">Order Count</div>
+            <div class="numbers">9,999</div>
+          </div>
+          <div class="lines">
+            <div class="title">Order Sales</div>
+            <div class="numbers">$ 99.9M</div>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
 
