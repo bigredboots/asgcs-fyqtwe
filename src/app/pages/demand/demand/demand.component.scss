@@ -2,9 +2,15 @@
 .page-container {
   position: relative;
 }
-.tabular-screem {
+.tabular-screen {
   position: absolute;
   top: 0px;
+  width: 100%;
+}
+.main-screen {
+  position: absolute;
+  top: 0px;
+  width: 100%;
 }
 .large-sum-tiles {
   display: flex;
