@@ -218,4 +218,67 @@
       </div>
     </div>
   </app-grid-container>
+
+  <!--new grid -->
+  <app-grid-container>
+    <div gridCell gcColSpan="3">
+      <div class="card card-body">
+        <div class="card-title">
+          <div class="left-side-content">
+            <div class="card-title-text">Summary</div>
+          </div>
+        </div>
+        <img
+          src="https://stackblitz.com/files/asgcs/github/bigredboots-arrow/angular-component-library-example-part-3-progress-45zjbr/master/src/assets/images/map-two-spots-line.jpg"
+        />
+      </div>
+    </div>
+
+    <div gridCell gcColSpan="3" class="card card-body">
+      <div class="card-title">
+        <div class="left-side-content">
+          <div class="card-title-text">Demand Activity</div>
+          <div class="filter-items">
+            <div class="filter-item">
+              <span class="k-dropdown-wrap">
+                <span class="k-input">Group<span>Customers</span></span>
+                <span class="k-select">
+                  <span class="k-icon k-i-arrow-s"></span>
+                </span>
+              </span>
+            </div>
+            <div class="filter-item">
+              <span class="k-dropdown-wrap">
+                <span class="k-input">Display<span>$USD</span></span>
+                <span class="k-select">
+                  <span class="k-icon k-i-arrow-s"></span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="total-legend">
+            <div class="firm">Firm</div>
+            <div class="buffer">Buffer</div>
+            <div class="forecast">Forecast</div>
+          </div>
+        </div>
+        <div class="card-icons" #activitymoreinfo>
+          <div class="buttonjump" #reportsopen>
+            <div class="jump-title" (click)="DReportsOpen()">
+              Optional Details
+            </div>
+            <div class="inner-jump-links">
+              <a [routerLink]="['/expandedreports']">Expanded Reports Link</a>
+              <a [routerLink]="['/expandedreports']">Expanded Reports Link</a>
+              <a [routerLink]="['/expandedreports']">Expanded Reports Link</a>
+              <a [routerLink]="['/expandedreports']">Expanded Reports Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="horizgrid-block">
+        <app-horizgrid></app-horizgrid>
+      </div>
+    </div>
+  </app-grid-container>
 </div>

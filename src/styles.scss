@@ -1238,3 +1238,117 @@ h4 {
 .main-header.reports .reportscreen-toggle {
   display: none;
 }
+
+//new toggle button code
+.toggleWrapper {
+  input {
+    position: absolute;
+    left: -99em;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  .barline {
+    fill: none;
+    stroke: #009ddb;
+    stroke-width: 3;
+  }
+  .chart-barline {
+    fill: none;
+    stroke: #009ddb;
+    stroke-width: 2;
+  }
+  .tablebox {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+  }
+  .table-line {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+  }
+  .toggle {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 25px;
+    background-color: $blue-color;
+    border-radius: 50px;
+    transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border: 2px solid $blue-color;
+
+    .toggle-tooltip {
+      position: absolute;
+      font-size: $smallest-font;
+      transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      opacity: 0;
+      top: 0px;
+    }
+    &:hover {
+      .toggle-tooltip.chart {
+        opacity: 0;
+        top: 0px;
+      }
+      .toggle-tooltip.tabular {
+        opacity: 1;
+        top: -20px;
+      }
+    }
+  }
+  .toggle__handler {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border-radius: 20px;
+    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .chart-icon {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    width: 30px;
+    top: 5px;
+    right: 30px;
+  }
+  .table-icon {
+    position: absolute;
+    transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    top: 4px;
+    left: 35px;
+    z-index: 0;
+  }
+
+  input:checked {
+    + .toggle {
+      background-color: $white;
+      &:hover {
+        .toggle-tooltip.chart {
+          opacity: 1;
+          top: -20px;
+        }
+        .toggle-tooltip.tabular {
+          opacity: 0;
+          top: -20px;
+        }
+      }
+      .toggle__handler {
+        transform: translate3d(44px, 0, 0);
+        background: $blue-color;
+      }
+      .chart-icon {
+        opacity: 1;
+      }
+      .table-icon {
+        opacity: 0;
+      }
+    }
+  }
+}

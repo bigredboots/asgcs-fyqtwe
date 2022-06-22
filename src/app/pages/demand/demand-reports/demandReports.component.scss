@@ -10,12 +10,14 @@
   position: absolute;
 }
 .menu-check:checked ~ label {
-  font-weight: ;
+  font-weight: bold;
 }
 .menu-check:checked ~ ul {
   max-height: 1000px;
 }
-.expanded.search-component {display: none;}
+.expanded.search-component {
+  display: none;
+}
 .modal-window {
   border-radius: 10px;
   border: 1px solid #ccc;

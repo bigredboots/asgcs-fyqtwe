@@ -754,14 +754,6 @@ button.search-submit {
   display: flex;
   justify-content: space-between;
 }
-:host ::ng-deep .reportscreen-toggle {
-    text-align: center;
-    align-self: center;
-    background: $blue-color;
-    color: $white;
-}
-
-
 :host ::ng-deep .search-component {
   border-width: 0;
   position: relative;

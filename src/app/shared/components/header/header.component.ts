@@ -28,7 +28,6 @@ export class HeaderComponent implements OnInit {
   @Input() value: any;
   @Output() valueChange = new EventEmitter<any>();
 
-  
   private _subscriptionsSubject$: Subject<void>;
   public currentPanelState: SidePanelState;
   constructor(
@@ -81,12 +80,15 @@ export class HeaderComponent implements OnInit {
   toggleSidebar() {
     this.overview.nativeElement.classList.toggle('sidebar-active');
   }
+  toggleTabularView() {
+    document.body.classList.toggle('tabular-view');
+  }
   toggleExpandedFilters() {
     document.body.classList.add('filter-open');
     // this.reportfilters.nativeElement.classList.toggle('expanded');
     // this.overview.nativeElement.classList.toggle('filter-expanded');
   }
-  sliderApply(){
+  sliderApply() {
     this.customslide.nativeElement.classList.toggle('custom-active');
   }
 
