@@ -77,7 +77,7 @@ export class AltHorizgridComponent implements OnInit {
   }
 
   @ViewChild(DataBindingDirective) dataBinding: DataBindingDirective;
-  public gridData: any[] = horizdata;
+  public gridData: any[] = althorizdata;
   public gridView: any[];
 
   public mySelection: string[] = [];
