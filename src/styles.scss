@@ -1286,6 +1286,11 @@ h4 {
       transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
       opacity: 0;
       top: 0px;
+      background: black;
+      border: 1px solid #ccc;
+      color: #ccc;
+      padding: 0px 3px;
+      border-radius: 5px;
     }
     &:hover {
       .toggle-tooltip.chart {
@@ -1294,7 +1299,7 @@ h4 {
       }
       .toggle-tooltip.tabular {
         opacity: 1;
-        top: -20px;
+        top: -25px;
       }
     }
   }
@@ -1332,11 +1337,11 @@ h4 {
       &:hover {
         .toggle-tooltip.chart {
           opacity: 1;
-          top: -20px;
+          top: -25px;
         }
         .toggle-tooltip.tabular {
           opacity: 0;
-          top: -20px;
+          top: -25px;
         }
       }
       .toggle__handler {
